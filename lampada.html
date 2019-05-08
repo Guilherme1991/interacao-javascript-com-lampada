@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lampada</title>
+</head>
+<body>
+    <style>
+      .ativar{
+          
+      }
+    #container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    </style>
+    <div id="container">
+    <h2>Encoste na lâmpada!</h2>
+    <p>Encoste na lampada para acender.</p>
+    <img src="" alt="" id="lamp">
+    </div>
+
+    <script>
+
+     let img = document.getElementById('lamp');
+     img.src="img/lampada.jpg";
+     
+     img.addEventListener('mouseover', function(){
+      this.src="img/lampada-on.jpg"; 
+     })
+
+     img.addEventListener('mouseleave', function(){
+      this.src="img/lampada.jpg"; 
+     })
+     
+    </script>
+</body>
+</html>
